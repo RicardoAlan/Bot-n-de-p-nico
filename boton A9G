@@ -133,7 +133,7 @@ void setup()
 
   DEBUG_PORT.flush();
   
-  sim.print("AT+GPS=1\r");
+  sim.print("AT+GPS=1\r"); //Para activar el GPS
   
   gpsPort.begin(9600);
 }
