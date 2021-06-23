@@ -101,7 +101,7 @@ void tiempo(){
 void EnvioSMS(){  
   sim.print("AT+CMGF=1\r");    //El envío del SMS en modo texto
   delay(100);
-  sim.println("AT+CMGS =\"5534644316\""); //Número de teléfono de destino
+  sim.println("AT+CMGS =\"55\""); //Número de teléfono de destino
   delay(100);
   sim.print("https://maps.google.com/maps?q=");//Colocamos la url de google maps
   sim.print(gps.location.lat(), 6);//Obtemos los datos de latitud del módulo gps y se lo enviamos al módulo gsm
