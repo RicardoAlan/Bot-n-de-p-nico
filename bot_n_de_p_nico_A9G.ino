@@ -84,7 +84,7 @@ static void doSomeWork( const gps_fix & fix )
     if (TT >= R && LEDestado == 1){
       sim.print("AT+CMGF=1\r");    //El envío del SMS en modo texto
       delay(100);
-      sim.println("AT+CMGS =\"5586807708\""); //Número de teléfono de destino
+      sim.println("AT+CMGS =\"55\""); //Número de teléfono de destino
       delay(100);
       sim.print("https://maps.google.com/maps?q=");//Colocamos la url de google maps
       printL( sim, fix.latitudeL() );//Obtemos los datos de latitud del módulo gps y se lo enviamos al módulo gsm
