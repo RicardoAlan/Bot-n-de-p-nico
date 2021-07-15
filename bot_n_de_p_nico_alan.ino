@@ -53,18 +53,18 @@ void loop() {
   
   tiempo(); //Función tiempo
   
-  if (3041 < DT && DT < 5194){ //Si el botón se presiona entre 4 y 6 segundos
+  if (3041 < DT && DT < 5194){ //Si el botón se presiona entre 3 y 5.2 segundos
     
-    if (LEDestado == 0){ //Si el Led estaba apagado
+    if (LEDestado == 0){ //Si el sistema estaba apagado
       digitalWrite(LED,HIGH); //Ahora lo prende 
-      LEDestado = 1; //Me cambia el estado del LED a prendido
+      LEDestado = 1; //Me cambia el estado del sistema a prendido
       R = 0;
     }    
   }
-  else if (6231 < DT && DT < 10856){ //Si el botón se presionó entre 8 y 11 segundos
-    if (LEDestado == 1){ //Si el led estaba prendido
+  else if (6231 < DT && DT < 10856){ //Si el botón se presionó entre 6.2 y 10.9 segundos
+    if (LEDestado == 1){ //Si el sistema estaba prendido
       digitalWrite(LED,LOW); //Ahora lo apaga
-      LEDestado = 0; //Cambia el estado del Led a apagado
+      LEDestado = 0; //Cambia el estado del sistema a apagado
     }
   }
   PushViejo = PushActual; //Cambia el estado del botón 
