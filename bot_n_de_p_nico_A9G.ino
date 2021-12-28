@@ -1,5 +1,5 @@
 #include <NMEAGPS.h> //Paquetería para analizar los carácteres GPS
-#include <GPSport.h>
+#include <GPSport.h> //Paquetería para definir los puertos del GPS
 #include <SoftwareSerial.h> //Paquetería para poner pines digitales como Rx y/o Tx
 
 #if !defined( NMEAGPS_PARSE_RMC )
