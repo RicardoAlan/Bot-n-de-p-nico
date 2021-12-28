@@ -159,7 +159,7 @@ void loop()
       LEDestado = 0; //Cambia el estado del Led a apagado
     }
   }
-  PushViejo = PushActual; //Cambia el estado del botón 
+  PushViejo = PushActual; //Actualiza el estado del botón 
   
   GPSloop();
 }
