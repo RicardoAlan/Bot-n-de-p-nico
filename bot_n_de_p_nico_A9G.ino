@@ -143,7 +143,7 @@ void loop()
 {
   PushActual = digitalRead(Push); //Estado del push buttom
   
-  tiempo(); //Función tiempo
+  tiempo(); //Función que mide el tiempo durante el cual se mantuvo presionado el botón
   
   if (3041 < DT && DT < 5194){ //Si el botón se presiona entre 4 y 6 segundos
     
@@ -171,7 +171,7 @@ void tiempo(){
     }
     else{
       T2 = millis(); //Me toma el tiempo en que fue liberado el Push
-      DT = T2-T1; //La diferencia entre T1 y T2 me dara el tiempo en que el Push estuvo presionado
+      DT = T2-T1; //La diferencia entre T2 y T1 me dara el tiempo en que el Push estuvo presionado
       DEBUG_PORT.println(DT);
       }
    }
