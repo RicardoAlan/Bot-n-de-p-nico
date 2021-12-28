@@ -1,4 +1,4 @@
-#include <NMEAGPS.h>
+#include <NMEAGPS.h> //Paquetería para analizar los carácteres GPS
 #include <GPSport.h>
 #include <SoftwareSerial.h> //Paquetería para poner pines digitales como Rx y/o Tx
 
