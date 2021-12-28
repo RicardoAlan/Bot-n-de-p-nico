@@ -145,7 +145,7 @@ void loop()
   
   tiempo(); //Función que mide el tiempo durante el cual se mantuvo presionado el botón
   
-  if (3041 < DT && DT < 5194){ //Si el botón se presiona entre 4 y 6 segundos
+  if (2925 < DT && DT < 5113){ //Si el botón se presiona entre 4 y 6 segundos
     
     if (LEDestado == 0){ //Si el Led estaba apagado
       digitalWrite(LED,HIGH); //Ahora lo prende 
@@ -153,7 +153,7 @@ void loop()
       R = 0;
     }    
   }
-  else if (6231 < DT && DT < 10856){ //Si el botón se presionó entre 8 y 11 segundos
+  else if (6104 < DT && DT < 10722){ //Si el botón se presionó entre 8 y 11 segundos
     if (LEDestado == 1){ //Si el led estaba prendido
       digitalWrite(LED,LOW); //Ahora lo apaga
       LEDestado = 0; //Cambia el estado del Led a apagado
